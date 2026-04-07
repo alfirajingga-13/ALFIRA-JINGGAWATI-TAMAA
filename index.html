@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pink World - Home</title>
+    <style>
+        /* CSS DALAM SATU FILE */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5; /* Pink sangat muda */
+            color: #444;
+        }
+
+        header {
+            background-color: #ff69b4; /* Hot Pink */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #db7093;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            min-height: 60vh;
+        }
+
+        h2 {
+            color: #db7093;
+            border-left: 5px solid #ff69b4;
+            padding-left: 15px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #ffd1dc;
+        }
+
+        .welcome-text {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Tombol Aksi */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #db7093;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Pink World</h1>
+        <p>Jelajahi keindahan dalam balutan warna merah muda</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Bunga Pink" class="hero-img">
+        
+        <h2>Halo, Teman!</h2>
+        <div class="welcome-text">
+            <p>Selamat datang di situs pribadi saya. Situs ini dirancang dengan penuh kasih sayang menggunakan skema warna <strong>Pink</strong> untuk memberikan kesan yang ceria, lembut, dan kreatif.</p>
+            
+            <p>Di sini kamu bisa melihat informasi mengenai saya, koleksi foto favorit, hingga beberapa video menarik. Silakan klik menu navigasi di atas untuk mulai menjelajah.</p>
+            
+            <a href="biodata.html" class="btn">Kenali Saya Lebih Lanjut</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pinky Website Team | Dibuat dengan &hearts;</p>
+    </footer>
+
+</body>
+</html>
