@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Video - Pink Web</title>
+    <style>
+        /* CSS UNTUK TEMA PINK */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #444;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #db7093;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #db7093;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Desain Grid Video */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background: #fffafa;
+            border: 2px solid #ffb6c1;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .video-card:hover {
+            box-shadow: 0 5px 15px rgba(219, 112, 147, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe, 
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-info h3 {
+            margin: 0 0 10px 0;
+            color: #ff69b4;
+            font-size: 1.1em;
+        }
+
+        .video-info p {
+            font-size: 0.9em;
+            color: #777;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive untuk HP */
+        @media (max-width: 600px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Video</h1>
+        <p>Tonton koleksi video menarik di sini</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Koleksi Video Favorit</h2>
+        
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Video Rekomendasi 1</h3>
+                    <p>Deskripsi singkat tentang video pertama yang menarik.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Video Rekomendasi 2</h3>
+                    <p>Inspirasi harian dengan nuansa yang menenangkan.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls>
+                        <source src="video-anda.mp4" type="video/mp4">
+                        Browser tidak mendukung tag video.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3>Video Pribadi</h3>
+                    <p>Momen spesial yang diunggah langsung ke website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pinky Website Team | Dibuat dengan &hearts;</p>
+    </footer>
+
+</body>
+</html>
