@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya - Pink Web</title>
+    <style>
+        /* CSS UNTUK TEMA PINK */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #444;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #db7093;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #db7093;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Desain Tabel Biodata */
+        .profile-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .profile-table tr {
+            border-bottom: 1px solid #ffe4e1;
+        }
+
+        .profile-table td {
+            padding: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #ff69b4;
+            width: 30%;
+        }
+
+        /* Foto Profil Kecil */
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffb6c1;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .btn-back {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #ffb6c1;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .btn-back:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profil Lengkap</h1>
+        <p>Mengenal lebih dekat siapa saya</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150/ff69b4/ffffff?text=FOTO" alt="Foto Profil" class="profile-pic">
+        
+        <h2>Biodata Diri</h2>
+        
+        <table class="profile-table">
+            <tr>
+                <td class="label">Alfira Jinggawati Tama</td>
+                <td>Putri Merah Muda</td>
+            </tr>
+            <tr>
+                <td class="label">Nama Panggilan</td>
+                <td>Putri</td>
+            </tr>
+            <tr>
+                <td class="label">Tempat Lahir</td>
+                <td>Banjarmasin, Indonesia</td>
+            </tr>
+            <tr>
+                <td class="label">Tanggal Lahir</td>
+                <td>14 Februari 2002</td>
+            </tr>
+            <tr>
+                <td class="label">Pendidikan</td>
+                <td>S1 Informatika</td>
+            </tr>
+            <tr>
+                <td class="label">Hobi</td>
+                <td>Coding, Membaca, dan Mendengarkan Musik</td>
+            </tr>
+            <tr>
+                <td class="label">Cita-cita</td>
+                <td>Web Developer Profesional</td>
+            </tr>
+        </table>
+
+        <a href="index.html" class="btn-back"> Kembali ke Beranda</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pinky Website Team | Dibuat dengan &hearts;</p>
+    </footer>
+
+</body>
+</html>
