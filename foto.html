@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto - Pink Web</title>
+    <style>
+        /* CSS UNTUK TEMA PINK */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #444;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #db7093;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #db7093;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Desain Galeri Foto */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 5px solid #ffe4e1;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            border-color: #ff69b4;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .caption {
+            padding: 10px;
+            text-align: center;
+            background: #fff0f5;
+            font-size: 0.9em;
+            color: #db7093;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Foto</h1>
+        <p>Kumpulan momen favorit dalam nuansa merah muda</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Koleksi Foto</h2>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=80" alt="Bunga">
+                <div class="caption">Bunga Musim Semi</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80" alt="Pink Aesthetic">
+                <div class="caption">Aesthetic Pink</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80" alt="Love">
+                <div class="caption">Momen Berharga</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?auto=format&fit=crop&w=500&q=80" alt="Pink Sky">
+                <div class="caption">Langit Senja</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=500&q=80" alt="Nature">
+                <div class="caption">Keindahan Alam</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=80" alt="Cupcake">
+                <div class="caption">Manisan Pink</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pinky Website Team | Dibuat dengan &hearts;</p>
+    </footer>
+
+</body>
+</html>
