@@ -13,7 +13,6 @@
             background-color: #fff0f5; /* Pink sangat muda */
             color: #444;
         }
-
         header {
             background-color: #ff69b4; /* Hot Pink */
             color: white;
@@ -21,7 +20,6 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
         nav {
             display: flex;
             justify-content: center;
@@ -30,7 +28,6 @@
             top: 0;
             z-index: 1000;
         }
-
         nav a {
             color: white;
             padding: 15px 25px;
@@ -38,12 +35,10 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
         nav a:hover {
             background-color: #db7093;
             letter-spacing: 1px;
         }
-
         .container {
             padding: 40px 20px;
             max-width: 1000px;
@@ -53,13 +48,11 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             min-height: 60vh;
         }
-
         h2 {
             color: #db7093;
             border-left: 5px solid #ff69b4;
             padding-left: 15px;
         }
-
         .hero-img {
             width: 100%;
             height: 400px;
@@ -68,12 +61,10 @@
             margin-bottom: 20px;
             background-color: #ffd1dc;
         }
-
         .welcome-text {
             line-height: 1.8;
             font-size: 1.1em;
         }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -81,56 +72,73 @@
             color: white;
             margin-top: 40px;
         }
-
         /* Tombol Aksi */
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background-color: #ff69b4;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: transform 0.2s;
+            border-radius: 8px;
+            margin: 10px 8px 10px 0;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
         }
-
         .btn:hover {
-            transform: scale(1.05);
+            transform: translateY(-3px) scale(1.05);
             background-color: #db7093;
+            box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+        }
+        
+        /* Tombol khusus Tugas 2 (GitHub) */
+        .btn-github {
+            background-color: #6e5494;
+            box-shadow: 0 4px 10px rgba(110, 84, 148, 0.3);
+        }
+        .btn-github:hover {
+            background-color: #5a4480;
+            box-shadow: 0 6px 15px rgba(110, 84, 148, 0.4);
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Selamat Datang di Profil Alfira Jinggawati Tama</h1>
         <p>Universitas Lambung Mangkurat</p>
     </header>
-
+    
     <nav>
         <a href="index.html">Beranda</a>
         <a href="biodata.html">Biodata</a>
         <a href="foto.html">Foto</a>
         <a href="video.html">Video</a>
     </nav>
-
+    
     <div class="container">
-        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Bunga Pink" class="hero-img">
-        
+        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+             alt="Bunga Pink" class="hero-img">
+       
         <h2>Halo, Teman!</h2>
         <div class="welcome-text">
-            <p>Selamat datang di situs pribadi Alfira Jinggawati Tama Mahasiswi Program Studi Sosial Ekonomi Perikanan Fakultas Perikanan dan Ilmu Kelautan Universitas Lambung Mangkurat. Situs ini dirancang untuk profil data diri <strong>Alfira Jinggawati Tama</strong> untuk memberikan kesan yang ceria.</p>
-            
-            <p>Di sini anda bisa melihat informasi mengenai saya, kumpulan foto tempat tinggal, hingga beberapa video menarik. Silakan klik menu navigasi di atas untuk mulai menjelajah.</p>
-            
+            <p>Selamat datang di situs pribadi <strong>Alfira Jinggawati Tama</strong>, Mahasiswi Program Studi Sosial Ekonomi Perikanan Fakultas Perikanan dan Ilmu Kelautan Universitas Lambung Mangkurat.</p>
+           
+            <p>Di sini anda bisa melihat informasi mengenai saya, kumpulan foto, hingga beberapa video menarik. Silakan klik menu navigasi di atas untuk mulai menjelajah.</p>
+           
+            <!-- Tombol yang sudah diperbaiki -->
             <a href="biodata.html" class="btn">Kenali Saya Lebih Lanjut</a>
-            <a href="biodata.html" class="btn">Tugas 2</a>
+            
+            <!-- Tombol Tugas 2 yang mengarah ke GitHub -->
+            <a href="https://github.com/NAMA_USERNAME_GITHUB_KAMU/NAMA_REPOSITORY" 
+               target="_blank" 
+               class="btn btn-github">
+               👉 Lihat Tugas 2 di GitHub
+            </a>
         </div>
     </div>
-
+    
     <footer>
-        <p>&copy; 2026 Alfira Jinggawati Tama | Dibuat Alfira Jinggawati Tama &hearts;</p>
+        <p>&copy; 2026 Alfira Jinggawati Tama | Dibuat dengan ❤️ oleh Alfira Jinggawati Tama</p>
     </footer>
-
 </body>
 </html>
