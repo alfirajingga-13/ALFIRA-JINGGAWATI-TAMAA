@@ -5,130 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pink World - Home</title>
     <style>
-        /* CSS DALAM SATU FILE */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #fff0f5; /* Pink sangat muda */
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe4f3 0%, #ffb6e0 100%);
             color: #444;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #ff69b4; /* Hot Pink */
+            background: linear-gradient(135deg, #ff1493, #db2777);
             color: white;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
         }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ffb6c1; /* Light Pink */
+            background-color: #ff69b4;
             position: sticky;
             top: 0;
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
         nav a {
             color: white;
-            padding: 15px 25px;
+            padding: 16px 24px;
             text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
+            font-weight: 600;
+            transition: all 0.3s;
         }
+
         nav a:hover {
-            background-color: #db7093;
-            letter-spacing: 1px;
+            background-color: #db2777;
+            transform: translateY(-2px);
         }
+
         .container {
-            padding: 40px 20px;
             max-width: 1000px;
-            margin: 20px auto;
+            margin: 30px auto;
+            padding: 40px 30px;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            min-height: 60vh;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.15);
         }
-        h2 {
-            color: #db7093;
-            border-left: 5px solid #ff69b4;
-            padding-left: 15px;
-        }
+
         .hero-img {
             width: 100%;
-            height: 400px;
+            height: 420px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #db2777;
             margin-bottom: 20px;
-            background-color: #ffd1dc;
+            font-size: 2rem;
         }
+
         .welcome-text {
-            line-height: 1.8;
-            font-size: 1.1em;
+            font-size: 1.1rem;
+            color: #555;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #ff69b4;
-            color: white;
-            margin-top: 40px;
+
+        .welcome-text p {
+            margin-bottom: 20px;
         }
-        /* Tombol Aksi */
+
+        /* Tombol Umum */
         .btn {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #ff69b4;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #ff1493, #db2777);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 50px;
+            font-weight: 600;
             margin: 10px 8px 10px 0;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+            transition: all 0.4s;
+            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
         }
+
         .btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            background-color: #db7093;
-            box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(255, 20, 147, 0.4);
         }
-        
-        /* Tombol khusus Tugas 2 (GitHub) */
+
+        /* Tombol Tugas 3 - Repository */
+        .btn-tugas3 {
+            background: linear-gradient(135deg, #c026d3, #db2777);
+            font-size: 1.1rem;
+            padding: 15px 32px;
+        }
+
+        .btn-tugas3:hover {
+            background: linear-gradient(135deg, #db2777, #be185d);
+            transform: translateY(-6px) scale(1.07);
+        }
+
+        /* Tombol GitHub Tugas 2 */
         .btn-github {
-            background-color: #6e5494;
-            box-shadow: 0 4px 10px rgba(110, 84, 148, 0.3);
+            background: linear-gradient(135deg, #6e5494, #8a6bb8);
         }
+
         .btn-github:hover {
-            background-color: #5a4480;
-            box-shadow: 0 6px 15px rgba(110, 84, 148, 0.4);
+            background: linear-gradient(135deg, #5a4480, #7c5ca6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #ff1493, #db2777);
+            color: white;
+            margin-top: 50px;
+            font-size: 0.95rem;
+        }
+
+        .heart {
+            animation: heartbeat 1.4s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .hero-img { height: 300px; }
+            .btn { display: block; margin: 12px 0; width: fit-content; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di Profil Alfira Jinggawati Tama</h1>
-        <p>Universitas Lambung Mangkurat</p>
+        <h1>Selamat Datang di My Pink World</h1>
+        <p>Alfira Jinggawati Tama - Universitas Lambung Mangkurat</p>
     </header>
-    
+   
     <nav>
         <a href="index.html">Beranda</a>
         <a href="biodata.html">Biodata</a>
         <a href="foto.html">Foto</a>
         <a href="video.html">Video</a>
     </nav>
-    
+   
     <div class="container">
-        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
              alt="Bunga Pink" class="hero-img">
-       
-        <h2>Halo, Teman!</h2>
+      
+        <h2>Halo, Teman! 💖</h2>
         <div class="welcome-text">
-            <p>Selamat datang di situs pribadi <strong>Alfira Jinggawati Tama</strong>, Mahasiswi Program Studi Sosial Ekonomi Perikanan Fakultas Perikanan dan Ilmu Kelautan Universitas Lambung Mangkurat.</p>
-           
+            <p>Selamat datang di situs pribadi <strong>Alfira Jinggawati Tama</strong>, mahasiswi Program Studi Sosial Ekonomi Perikanan Fakultas Perikanan dan Ilmu Kelautan Universitas Lambung Mangkurat.</p>
+          
             <p>Di sini anda bisa melihat informasi mengenai saya, kumpulan foto, hingga beberapa video menarik. Silakan klik menu navigasi di atas untuk mulai menjelajah.</p>
-           
-            <!-- Tombol yang sudah diperbaiki -->
+          
             <a href="biodata.html" class="btn">Kenali Saya Lebih Lanjut</a>
             
-            <!-- Tombol Tugas 2 yang mengarah ke GitHub -->
+            <!-- Tombol Tugas 3 - Repository (INI YANG BARU) -->
+            <a href="https://github.com/alfirajingga-13/NAMA-REPOSITORY-TUGAS3" 
+               target="_blank" 
+               class="btn btn-tugas3">
+               📂 Lihat Tugas 3 -  GitHub
+            </a>
+
+            <!-- Tombol Tugas 2 -->
             <a href="https://alfirajingga-13.github.io/ALFIRA-JINGGAWATI-TAMA-2/" 
                target="_blank" 
                class="btn btn-github">
@@ -136,9 +198,9 @@
             </a>
         </div>
     </div>
-    
+   
     <footer>
-        <p>&copy; 2026 Alfira Jinggawati Tama | Dibuat dengan ❤️ oleh Alfira Jinggawati Tama</p>
+        <p>&copy; 2026 Alfira Jinggawati Tama | Dibuat dengan <span class="heart">❤️</span> oleh Alfira Jinggawati Tama</p>
     </footer>
 </body>
 </html>
